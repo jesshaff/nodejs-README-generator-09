@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-readme-generator-09",
+  "version": "1.0.0",
+  "description": "Professional README generator ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesshaff/nodejs-README-generator-09.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jesshaff/nodejs-README-generator-09/issues"
+  },
+  "homepage": "https://github.com/jesshaff/nodejs-README-generator-09#readme"
+}
