@@ -1,3 +1,4 @@
+// Function that returns license badge based on user input
 function renderLicenseBadge(license) {
     switch(license) {
         case 'MIT':
@@ -13,6 +14,7 @@ function renderLicenseBadge(license) {
     }
 }
 
+// Function that returns the license link 
 function renderLicenseLink(license) {
     switch(license) {
         case 'MIT':
@@ -28,6 +30,7 @@ function renderLicenseLink(license) {
     }
 }
 
+// Function that displays the license badge image
 function showLicenseBadge(license) {
     switch(license) {
         case 'MIT':
@@ -43,6 +46,7 @@ function showLicenseBadge(license) {
     }
 }
 
+// Function that returns the license section of README
 function renderLicenseSection(license) {
     switch(license) {
         case 'MIT':
@@ -58,6 +62,7 @@ function renderLicenseSection(license) {
     }
 }
 
+// Function that generates the markdown for README
 function generateMarkdown(responses) {
     return `# ${responses.title}
 <br>
