@@ -64,8 +64,6 @@ function generateMarkdown(responses) {
 
 ${showLicenseBadge(responses.license[0])}
 
-<br>
-
 ## Description
 ${responses.description}
 
