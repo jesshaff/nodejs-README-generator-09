@@ -67,3 +67,15 @@ const questions = () => {
             err ? console.error(err) : console.log('Error')
         })
     };
+
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) =>
+    err ? console.log(err) : console.log('Succesafully wrote to README.md')
+    );
+}
+
+const init = () => {
+    questions()
+}
+
+init();
