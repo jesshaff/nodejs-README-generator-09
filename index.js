@@ -20,24 +20,24 @@ const questions = () => {
             {
                 type: 'checkbox',
                 message: 'Which command should be run to install dependencies?',
-                name: 'installation instructions',
+                name: 'installation',
                 choices: ['npm i'],
                 default: 'nmp i',
             },
             {
                 type: 'input',
                 message: 'What information does the user need to know about using the repo?',
-                name: 'usage information',
+                name: 'usage',
             },
             {
                 type: 'input',
                 message: 'What does the user need to know about contributing to the repo?',
-                name: 'contribution guidelines',
+                name: 'contribution',
             },
             {
                 type: 'input',
                 message: 'Which command should be run to run tests?',
-                name: 'test instructions',
+                name: 'test',
                 choices: ['npm test'],
                 default: 'nmp test',
             },
@@ -56,7 +56,7 @@ const questions = () => {
             {
                 type: 'input',
                 message: 'Provide your GitHub username',
-                name: 'git username',
+                name: 'username',
             },
             {
                 type: 'input',

@@ -46,3 +46,46 @@ function renderLicenseSection(license) {
             return ''       
     }
 }
+
+function generateMarkdown(responses) {
+    return `# ${responses.title}
+    ${renderLicenseSection(responses.license[0])}
+    
+    ## Description
+    ${responses.description}
+
+    ## Table of Contents
+    * [Installation](#Installation)
+    * [Usage](#Usage)
+    * [Contributing](#Contributing)
+    * [Tests](#Test)
+    * [Questions](#Questions)    
+    * [License](#License)
+
+    ## Installation
+    Run the following command to install all necessary dependencies:
+    \`\`\`
+    ${responses.installation}
+    \`\`\`
+
+    ## Usage
+    ${repsonses.usage}
+
+    ## Contributing
+    ${responses.contribution}
+
+    ## Tests
+    Run the following command to run tests:
+    \`\`\`
+    ${responses.test}
+    \`\`\`
+
+    ## Questions
+    If you have any questions about the repo, please contact me at ${reponses.email}. If you would like to see more of my work, please go to ![${respones.username}](https://github.com/${respones.userename}).
+
+    ## License
+    This project is licensed under the ${respones.license} license.
+    `;
+}
+
+module.exports = generateMarkdown;
