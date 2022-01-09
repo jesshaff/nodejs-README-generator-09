@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const utils = require('./utils/generateMarkdown.js');
-const generateMarkdown = require('./utils/generateMarkdown.js');
+const utils = require('./utils/generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown');
 const fileName = 'README.md';
 
 const questions = () => {
@@ -21,8 +21,8 @@ const questions = () => {
                 type: 'checkbox',
                 message: 'Which command should be run to install dependencies?',
                 name: 'installation',
-                choices: ['npm i'],
-                default: 'nmp i',
+                choices: ['npm install'],
+                default: 'nmp install',
             },
             {
                 type: 'input',
@@ -38,8 +38,8 @@ const questions = () => {
                 type: 'input',
                 message: 'Which command should be run to run tests?',
                 name: 'test',
-                choices: ['npm test'],
-                default: 'nmp test',
+                choices: ['node index.js'],
+                default: 'node index.js',
             },
             {
                 type: 'checkbox',
