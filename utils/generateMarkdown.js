@@ -12,3 +12,37 @@ function renderLicenseBadge(license) {
             return ''
     }
 }
+
+function renderLicenseLink(license) {
+    switch(license) {
+        case 'MIT':
+            return 'https://opensource.org/licenses/MIT'
+        case 'GPL 3.0':
+            return 'https://www.gnu.org/licenses/gpl-3.0'
+        case 'APACHE 2.0':
+            return 'https://opensource.org/licenses/Apache-2.0'
+        case 'BSD 3':
+            return 'https://opensource.org/licenses/BSD-3-Clause'
+        case 'N/A':
+            return ''
+    }
+}
+
+function renderLicenseSection(license) {
+    switch(license) {
+        case 'MIT':
+            return `${renderLicenseBadge(license)}
+            ${renderLicenseLink(license)}`
+        case 'GPL 3.0':
+            return `${renderLicenseBadge(license)}
+            ${renderLicenseLink(license)}`
+        case 'APACHE 2.0':
+            return `${renderLicenseBadge(license)}
+            ${renderLicenseLink(license)}`
+        case 'BSD 3':
+            return `${renderLicenseBadge(license)}
+            ${renderLicenseLink(license)}`
+        case 'N/A':
+            return ''       
+    }
+}
