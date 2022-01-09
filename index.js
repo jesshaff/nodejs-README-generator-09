@@ -38,7 +38,7 @@ const questions = () => {
                 name: 'test instructions',
             },
             {
-                type: 'input',
+                type: 'checkbox',
                 message: 'Which license did you use?',
                 name: 'license',
                 choices: [
@@ -63,14 +63,14 @@ const questions = () => {
         .then((responses) => {
             writeToFile('README.md', generateMarkdown(responses))
         })
-        .catch((err) {
+        .catch((err) => {
             err ? console.error(err) : console.log('Error')
         })
     };
 
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
-    err ? console.log(err) : console.log('Succesafully wrote to README.md')
+    err ? console.log(err) : console.log('Successfully wrote to README.md')
     );
 }
 

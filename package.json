@@ -10,10 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/jesshaff/nodejs-README-generator-09.git"
   },
-  "author": "",
+  "author": "Jessica Haff",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jesshaff/nodejs-README-generator-09/issues"
   },
-  "homepage": "https://github.com/jesshaff/nodejs-README-generator-09#readme"
+  "homepage": "https://github.com/jesshaff/nodejs-README-generator-09#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
 }
