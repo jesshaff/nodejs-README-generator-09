@@ -50,7 +50,6 @@ const questions = () => {
                 'GPL 3.0', 
                 'Apache 2.0',
                 'BSD 3', 
-                'GNU', 
                 'N/A'],
                 default: 'MIT',
             },
