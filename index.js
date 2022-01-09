@@ -4,6 +4,8 @@ const utils = require('./utils/generateMarkdown');
 const generateMarkdown = require('./utils/generateMarkdown');
 const fileName = 'README.md';
 
+console.log('Welcome to my README generator!')
+console.log('Answer the following questions to generate a high quality README for your project.')
 const questions = () => {
     inquirer
         .prompt([

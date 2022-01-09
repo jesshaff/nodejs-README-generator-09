@@ -65,7 +65,6 @@ function generateMarkdown(responses) {
 ${showLicenseBadge(responses.license[0])}
 
 <br>
-<br>
 
 ## Description
 ${responses.description}
@@ -97,7 +96,7 @@ ${responses.test}
 \`\`\`
 
 ## Questions
-If you have any questions about the repo, please contact me at ${responses.email}. If you would like to see more of my work, please go to ![${responses.username}](https://github.com/${responses.username}).
+If you have any questions about the repo, please contact me at ${responses.email}. If you would like to see more of my work, please go to my GitHub Profile [github.com/${responses.username}](https://github.com/${responses.username}).
 
 ## License
 This project is licensed under the ${responses.license} license.

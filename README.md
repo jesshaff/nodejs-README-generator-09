@@ -1,13 +1,17 @@
-# NodeJS README Generator
+# Node JS README Generator
 <br>
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 <br>
-<br>
 
 ## Description
-This application uses NodeJS and the users responses to generate a professional README file.
+This application uses NodeJS and the users responses to generate a professional README file:
+<br>
+
+[Video Demonstration](./Assets/Images/readme-generator-walkthrough.webm)
+
+<br> 
 
 ## Table of Contents
 * [Installation](#Installation)
@@ -24,7 +28,7 @@ npm install
 ```
 
 ## Usage
-The following video demonstrates how to use the application, and provides an example README generated from using the application:
+The following video demonstrates how to use the application, and provides an example README generated from using the application.
 
 ## Contributing
 No contributions are needed at this time.
@@ -36,7 +40,7 @@ node index.js
 ```
 
 ## Questions
-If you have any questions about the repo, please contact me at jessicahaff@gmail.com. If you would like to see more of my work, please go to ![jesshaff](https://github.com/jesshaff).
+If you have any questions about the repo, please contact me at jessicahaff5@gmail.com. If you would like to see more of my work, please go to my GitHub Profile [github.com/jesshaff](https://github.com/jesshaff).
 
 ## License
 This project is licensed under the MIT license.
