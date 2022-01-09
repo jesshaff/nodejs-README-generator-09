@@ -28,20 +28,31 @@ function renderLicenseLink(license) {
     }
 }
 
+function showLicenseBadge(license) {
+    switch(license) {
+        case 'MIT':
+            return `${renderLicenseBadge(license)}`
+        case 'GPL 3.0':
+            return `${renderLicenseBadge(license)}`
+        case 'APACHE 2.0':
+            return `${renderLicenseBadge(license)}`
+        case 'BSD 3':
+            return `${renderLicenseBadge(license)}`
+        case 'N/A':
+            return ''       
+    }
+}
+
 function renderLicenseSection(license) {
     switch(license) {
         case 'MIT':
-            return `${renderLicenseBadge(license)}
-            ${renderLicenseLink(license)}`
+            return `${renderLicenseLink(license)}`
         case 'GPL 3.0':
-            return `${renderLicenseBadge(license)}
-            ${renderLicenseLink(license)}`
+            return `${renderLicenseLink(license)}`
         case 'APACHE 2.0':
-            return `${renderLicenseBadge(license)}
-            ${renderLicenseLink(license)}`
+            return `${renderLicenseLink(license)}`
         case 'BSD 3':
-            return `${renderLicenseBadge(license)}
-            ${renderLicenseLink(license)}`
+            return `${renderLicenseLink(license)}`
         case 'N/A':
             return ''       
     }
@@ -49,43 +60,52 @@ function renderLicenseSection(license) {
 
 function generateMarkdown(responses) {
     return `# ${responses.title}
-    ${renderLicenseSection(responses.license[0])}
-    
-    ## Description
-    ${responses.description}
+<br>
 
-    ## Table of Contents
-    * [Installation](#Installation)
-    * [Usage](#Usage)
-    * [Contributing](#Contributing)
-    * [Tests](#Test)
-    * [Questions](#Questions)    
-    * [License](#License)
+${showLicenseBadge(responses.license[0])}
 
-    ## Installation
-    Run the following command to install all necessary dependencies:
-    \`\`\`
-    ${responses.installation}
+<br>
+<br>
 
+## Description
+${responses.description}
 
-    ## Usage
-    ${responses.usage}
+## Table of Contents
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [Contributing](#Contributing)
+* [Tests](#Test)
+* [Questions](#Questions)    
+* [License](#License)
 
-    ## Contributing
-    ${responses.contribution}
+## Installation
+Run the following command to install all necessary dependencies:
+\`\`\`
+${responses.installation}
+\`\`\`
 
-    ## Tests
-    Run the following command to run tests:
-    \`\`\`
-    ${responses.test}
+## Usage
+${responses.usage}
 
+## Contributing
+${responses.contribution}
 
-    ## Questions
-    If you have any questions about the repo, please contact me at ${responses.email}. If you would like to see more of my work, please go to ![${responses.username}](https://github.com/${responses.userename}).
+## Tests
+Run the following command to run tests:
+\`\`\`
+${responses.test}
+\`\`\`
 
-    ## License
-    This project is licensed under the ${responses.license} license.
-    `;
+## Questions
+If you have any questions about the repo, please contact me at ${responses.email}. If you would like to see more of my work, please go to ![${responses.username}](https://github.com/${responses.username}).
+
+## License
+This project is licensed under the ${responses.license} license.
+
+${renderLicenseSection(responses.license[0])}
+
+`;
 }
 
 module.exports = generateMarkdown;
+
