@@ -36,7 +36,7 @@ No contributions are needed at this time.
 ## Tests
 Run the following command to run tests:
 ```
-node index.js
+n/a
 ```
 
 ## Questions
