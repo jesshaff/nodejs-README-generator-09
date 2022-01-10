@@ -44,8 +44,8 @@ const questions = () => {
                 type: 'input',
                 message: 'Which command should be run to run tests?',
                 name: 'test',
-                choices: ['node index.js'],
-                default: 'node index.js',
+                choices: ['npm test'],
+                default: 'npm test',
             },
             {
                 type: 'checkbox',
